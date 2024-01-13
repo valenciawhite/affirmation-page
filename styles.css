@@ -1,8 +1,8 @@
 :root{
     --primary-color:#e3fafa;
     --secondary-color:#FFCDCC;
-    --tertiary-color:#1c1201;
-    --accent-color:#f8ff96;  
+    --tertiary-color:#241a16;
+    --accent-color:#b81d1d;  
 }
 
 @font-face {
@@ -73,7 +73,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--accent-color);
+    background: var(--tertiary-color);
     transition: .3s;
 }
 
@@ -81,8 +81,36 @@ body {
     width: 100%;
 }
 
+.container {
+    /* flex: 1 0 auto; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1
+}
+
 .main-content h1 {
     font-family: deco-font;
+}
+
+#cupid-img {
+    position: absolute;
+    top: 30px;
+    left: 850px;
+    max-width: 70%;
+    max-height: 70%;
+    z-index: -1;
+}
+
+#cake-img {
+    position: absolute;
+    top: 335px;
+    left: 360px;
+    max-width: 25%;
+    max-height: 25%;
 }
 
 .section-1 {
@@ -92,6 +120,8 @@ body {
 #trait-list{
     font-size: 25px;
     display: inline-block;
+    background-color: rgba(255, 255, 240, 0.8);
+    z-index: -1;
 }
 
 #trait-list li {
@@ -100,6 +130,7 @@ body {
 }
 
 .footer-nav {
+    flex-shrink: 0;
     background: transparent;
     padding: 20px;
     text-align: center;
