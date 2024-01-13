@@ -1,0 +1,86 @@
+:root{
+    --primary-color:#ccfeff;
+    --secondary-color:#FFCDCC;
+    --tertiary-color:#1c1201;
+    --accent-color:#f8ff96;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    padding-top: 80px;
+    background-color: var(--primary-color);
+}
+
+.text-item {
+    color: var(--tertiary-color);
+} 
+
+.list-item {
+    list-style: none;
+}
+
+.border-item {
+    border: var(--secondary-color) dashed 5px;
+    margin: 3rem;
+    padding: 1rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+#trait-list{
+    font-size: 25px;
+}
+
+.footer-nav {
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+}
