@@ -75,8 +75,18 @@ body {
     width: 100%;
 }
 
+.section-1 {
+    text-align: center;
+}
+
 #trait-list{
     font-size: 25px;
+    display: inline-block;
+}
+
+#trait-list li {
+    margin: 0;
+    padding: 0;
 }
 
 .footer-nav {
