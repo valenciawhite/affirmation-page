@@ -1,8 +1,13 @@
 :root{
-    --primary-color:#ccfeff;
+    --primary-color:#e3fafa;
     --secondary-color:#FFCDCC;
     --tertiary-color:#1c1201;
     --accent-color:#f8ff96;  
+}
+
+@font-face {
+    font-family: deco-font;
+    src: url(/assets/fonts/letter_magic.ttf);
 }
 
 * {
@@ -45,7 +50,8 @@ body {
 }
 
 .logo {
-    font-size: 32px;
+    font-family: deco-font;
+    font-size: 36px;
     color: var(--tertiary-color);
     text-decoration: none;
     font-weight: 500;
@@ -73,6 +79,10 @@ body {
 
 .navbar a:hover::before {
     width: 100%;
+}
+
+.main-content h1 {
+    font-family: deco-font;
 }
 
 .section-1 {
